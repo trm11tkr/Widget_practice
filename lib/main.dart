@@ -19,7 +19,14 @@ class MyApp extends StatelessWidget {
       home: MaterialApp(
         home: Scaffold(
             appBar: AppBar(title: const Text('Widget test App'),),
-            body: const ContainerPractice01()
+            body: Column(
+              children: const [
+                ContainerPractice01(), // シンプル
+                ContainerPractice02(), // 枠線、角度あり、角丸
+                SizedBox(height: 50,), // 垂直方向の余白
+                ContainerPractice03(), // 完全な丸
+              ],
+            ),
         ),
       ),
     );
