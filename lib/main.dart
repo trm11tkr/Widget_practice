@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'container_practice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       home: MaterialApp(
         home: Scaffold(
-          appBar: AppBar(title: const Text('Widget test App'),),
-          body: const Text('hello'),
+            appBar: AppBar(title: const Text('Widget test App'),),
+            body: const ContainerPractice01()
         ),
       ),
     );
