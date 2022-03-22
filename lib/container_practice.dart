@@ -66,7 +66,38 @@ class ContainerPractice03 extends StatelessWidget {
         decoration: BoxDecoration( // Containerの見た目を変える
           color: Colors.cyan[500],
           shape: BoxShape.circle,
+        ),
+      ),
+    );
+  }
+}
 
+
+/// 立体感を出す
+class ContainerPractice04 extends StatelessWidget {
+  const ContainerPractice04({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        alignment: Alignment.center,
+        margin: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
+        width: 100.0,
+        height: 100.0,
+        child: const Text('Container'),
+        decoration: BoxDecoration( // Containerの見た目を変える
+            color: Colors.cyan[500],
+            shape: BoxShape.circle,
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black26, // 影の色
+                spreadRadius: 1.0, // 影の大きさ
+                blurRadius: 10.0, // 影の不透明度
+                offset: Offset(10, 10), // x軸、y軸をどれだけずらすか
+              ),
+            ]
         ),
       ),
     );
