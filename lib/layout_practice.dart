@@ -53,18 +53,39 @@ class RowPractice extends StatelessWidget {
     );
   }
 }
-
-
-/// Center Widget
-class CenterPractice extends StatelessWidget {
-  const CenterPractice({Key? key}) : super(key: key);
+/// Center Widget example1
+class CenterPractice01 extends StatelessWidget {
+  const CenterPractice01({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return  Center(
       child: Container (
-          color: Colors.deepOrangeAccent,
-          child: const Text('Center Widgetでchildを真ん中に')
+          color: Colors.red,
+          child: const Text('Center Widgetで中央配置')
+      ),
+    );
+  }
+}
+
+/// Center Widget example2
+class CenterPractice02 extends StatelessWidget {
+  const CenterPractice02({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return  Center(
+      child: Column(
+        children: [
+          Container (
+              color: Colors.red,
+              child: const Text('Column/Rowを使うとど真ん中からではなくなる')
+          ),
+          Container (
+              color: Colors.blue,
+              child: const Text('Column/Rowを使うとど真ん中からではなくなる')
+          ),
+        ],
       ),
     );
   }
