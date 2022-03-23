@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       home: MaterialApp(
         home: Scaffold(
             appBar: AppBar(title: const Text('Widget test App'),),
-            body: CenterPractice01(),
+            body: SizedBoxPractice(),
         ),
       ),
     );

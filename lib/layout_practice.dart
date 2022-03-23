@@ -90,3 +90,36 @@ class CenterPractice02 extends StatelessWidget {
     );
   }
 }
+
+/// SizedBox Widget
+class SizedBoxPractice extends StatelessWidget {
+  const SizedBoxPractice({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return  Column(
+      children: [
+        Container (
+          width: 100,
+          height: 100,
+          color: Colors.red,
+          child: const Text('Widget1')
+        ),
+        const SizedBox(height: 50,),
+        Container (
+            width: 100,
+            height: 100,
+            color: Colors.blue,
+            child: const Text('Widget2')
+        ),
+        const SizedBox(height: 200,),
+        Container (
+            width: 100,
+            height: 100,
+            color: Colors.green,
+            child: const Text('Widget3')
+        ),
+      ],
+    );
+  }
+}
