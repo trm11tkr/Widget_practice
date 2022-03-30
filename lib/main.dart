@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_practice/card_practice.dart';
 import 'package:widget_practice/layout_practice.dart';
 import 'container_practice.dart';
 
@@ -20,7 +21,15 @@ class MyApp extends StatelessWidget {
       home: MaterialApp(
         home: Scaffold(
             appBar: AppBar(title: const Text('Widget test App'),),
-            body: SizedBoxPractice(),
+            body: Column(
+              children: const [
+                CardPractice01(),
+                CardPractice02(),
+                CardPractice03(),
+                CardPractice04(),
+                CardPractice05(),
+              ],
+            ),
         ),
       ),
     );
