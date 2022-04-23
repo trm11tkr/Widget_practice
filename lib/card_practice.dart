@@ -58,7 +58,7 @@ class CardPractice03 extends StatelessWidget {
         children: const [
           ListTile(
             leading: Icon(Icons.add),
-            title: Text('Card Title'),
+            title: Text('Card03'),
             subtitle: Text('Card SubTitle'),
           ),
           Text('hello'),
@@ -81,13 +81,18 @@ class CardPractice04 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      child: const SizedBox(
+      child: SizedBox(
         width: 200,
         height: 100,
         child: Card(
           color: Colors.yellow,
-          child:  Text('please tap'),
+          child: Column(
+            children: const [
+              Text('Card04'),
+              Text('please tap'),
+            ],
           ),
+        ),
       ),
       onTap: () => print('hello'),
     );
@@ -101,15 +106,22 @@ class CardPractice05 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Card(
+        color: Colors.white54,
         child: InkWell(
           splashColor: Colors.blue.withAlpha(30),
           onTap: () {
             debugPrint('Card tapeed');
           },
-          child: const SizedBox(
+          child: SizedBox(
             width: 300,
             height: 100,
-            child: Text('please tap'),
+            child: Column(
+              children: const [
+                Text('Card05'),
+                Text('please tap'),
+                Text('animation'),
+              ],
+            ),
           ),
         ),
       ),
